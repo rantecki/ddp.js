@@ -1,5 +1,5 @@
 {
-  "name": "ddp.js",
+  "name": "@nqminds/ddp.js",
   "version": "2.2.0",
   "description": "ddp javascript client",
   "main": "lib/ddp.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mondora/ddp.js"
+    "url": "https://github.com/nqminds/ddp.js"
   },
   "keywords": [
     "ddp",
@@ -28,9 +28,9 @@
   "author": "Paolo Scanferla <paolo.scanferla@mondora.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mondora/ddp.js/issues"
+    "url": "https://github.com/nqminds/ddp.js/issues"
   },
-  "homepage": "https://github.com/mondora/ddp.js",
+  "homepage": "https://github.com/nqminds/ddp.js",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.1",
@@ -48,6 +48,7 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
+    "ejson": "^2.1.2",
     "wolfy87-eventemitter": "^4.3.0"
   }
 }
