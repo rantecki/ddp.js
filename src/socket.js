@@ -1,5 +1,5 @@
 import EventEmitter from "wolfy87-eventemitter";
-import EJSON, { toJSONValue } from "ejson";
+import EJSON from "ejson";
 
 // Add EJSON support for ObjectId.
 EJSON.addType("oid", (value) => value);
