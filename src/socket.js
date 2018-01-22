@@ -1,5 +1,8 @@
 import EventEmitter from "wolfy87-eventemitter";
-import EJSON from "ejson";
+import EJSON, { toJSONValue } from "ejson";
+
+// Add EJSON support for ObjectId.
+EJSON.addType("oid", (value) => value);
 
 export default class Socket extends EventEmitter {
 
