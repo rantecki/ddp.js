@@ -1,5 +1,5 @@
 {
-  "name": "@nqminds/ddp.js",
+  "name": "ddp.js",
   "version": "2.2.4",
   "description": "ddp javascript client",
   "main": "lib/ddp.js",
