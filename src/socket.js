@@ -15,7 +15,9 @@ export default class Socket extends EventEmitter {
 
     send (object) {
         const message = EJSON.stringify(object);
-        this.rawSocket.send(message);
+        this.rawSocket.send(message, e => {
+          if (e) console.error('DDP::Socket: got an error: ', e);
+        });
         // Emit a copy of the object, as the listener might mutate it.
         this.emit("message:out", EJSON.parse(message));
     }
